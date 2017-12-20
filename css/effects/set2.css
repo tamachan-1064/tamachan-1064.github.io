@@ -177,11 +177,61 @@ figure.effect-oscar {
 
 	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);*/
 
-	background-color:#fb5353;
+	/*background-color:#fb5353;*/
 
 }
 
+figure.effect-oscar span{
 
+	font-size: 25px;
+
+}
+
+figure.effect-oscar-hematite {
+
+	background-color:#BD401E;
+
+}
+
+figure.effect-oscar-cftkit {
+
+	background-color:#f4a517;
+
+}
+
+figure.effect-oscar-vams {
+
+	background-color:#0BBBF2;
+
+}
+
+figure.effect-oscar-pepperwolf {
+
+	background-color:#626262;
+
+}
+
+figure.effect-oscar-gaikore {
+
+	background-color:#5A5AD1;
+
+}
+
+figure.effect-oscar-actif {
+
+	background-color:#30BBEA;
+
+}
+
+figure.effect-oscar-seccon {
+
+	background-color:#0087A4;
+
+}
+
+figure.effect-oscar-seccon h2{
+	font-family: notosansjapanese;
+}
 
 figure.effect-oscar img {
 
