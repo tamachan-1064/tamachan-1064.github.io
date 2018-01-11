@@ -60,7 +60,7 @@
 	0% { }
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
-
+
 /* Effect 3: Scale up */
 .grid-lod.effect-3 li.animate {
 	-webkit-transform: scale(0.6);
