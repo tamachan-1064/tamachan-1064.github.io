@@ -377,3 +377,57 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 .progress-wrapper span{font-size: 20px;}
 
 .title li{ font-size:25px; line-height:30px; padding-bottom:20px}
+
+.menu-btn {
+	width: 80%;
+  margin: 0 auto;
+}
+
+#titlezone .btn-to{
+	margin: 1.8rem 2.5rem;
+	color: #404040;
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+#titlezone .btn-to a{
+	color: #404040;
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+#titlezone .btn-to a:hover{
+	color: #fb5353;
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+#titlezone .btn a:focus{
+	outline: none;
+	box-shadow: none;
+	webkit-box-shadow: none;
+}
+
+#titlezone .btn a:active{
+	outline: none;
+	box-shadow: none;
+	webkit-box-shadow: none;
+	border: none;
+}
+
+.btn-to:hover{
+	.btn-to{
+		color: #fb5353;
+
+	}
+}
+
+@media (max-width: 767px){
+	#titlezone .btn-to{
+		margin: 0 1.5rem;
+	}
+}
