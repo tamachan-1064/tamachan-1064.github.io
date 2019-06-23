@@ -148,7 +148,7 @@ header[role="header"] nav{ padding-top:10px;transition-delay: 0s;
 
 transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
-header[role="header"] nav ul{ display:none; position: fixed; z-index:60; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(255,255,255,0.8); padding:0; margin:0; padding-top:199px;}
+header[role="header"] nav ul{ display:none; position: fixed; z-index:60; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(255,255,255,0.8); padding:0; margin:0; padding-top:30%;}
 
 header[role="header"] nav ul > li{ font-weight:800; font-size:42px; display:block}
 
@@ -230,9 +230,7 @@ footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:c
 
 footer[role="footer"] ul[role="social-icons"] > li{ display: inline-block; margin:0 6.5px}
 
-footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
-
-footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
+footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
 
 footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
 
@@ -447,7 +445,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 	width: 100%;
 }
 
-.eye-chatch p{
+.Header__subtext{
 	font-weight: 600;
 	font-size: 1.1em;
 	padding: 1.2em;
@@ -932,3 +930,13 @@ footer p{
 		height:200px;
 	}
 }
+
+.insta-link, .github-link, .fb-link, .twitter-link{background-color:#bbbbbb;}
+.insta-link:hover {
+	position: relative;
+	background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+}
+.github-link:hover {background-color: #333;}
+.fb-link:hover {background-color: #3C5A99;}
+.twitter-link:hover {background-color: #00aced;}

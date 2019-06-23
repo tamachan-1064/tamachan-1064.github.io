@@ -83,11 +83,6 @@ Main Components
     padding-top: 76px;
   }
 }
-@media only screen and (min-width: 1170px) {
-  .cd-main-content.is-fixed .cd-gallery {
-    padding-top: 100px;
-  }
-}
 
 /* --------------------------------
 

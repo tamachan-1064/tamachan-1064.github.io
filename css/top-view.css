@@ -28,6 +28,16 @@ body {
  margin: 0;
  letter-spacing: 0.1em;
 }
+@media screen and (max-width: 600px) {
+  .Header__title {
+    font-size: 13vw;
+    line-height:1.3em;
+    text-align: center;
+  }
+  .Header__subtext{
+    font-size: 0.8em;
+  }
+}
 
 .bigSquare {
  animation-name: bigSquare;
