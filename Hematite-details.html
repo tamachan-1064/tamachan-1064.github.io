@@ -37,7 +37,7 @@
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
         <!-- font -->
-        <link href="css/fonts.css" rel="stylesheet" type="text/css">
+        <!--<link href="css/fonts.css" rel="stylesheet" type="text/css">-->
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- custom -->
@@ -45,6 +45,8 @@
         <link href="css/effects/set2.css" rel="stylesheet" type="text/css">
         <link href="css/effects/normalize.css" rel="stylesheet" type="text/css">
         <link href="css/effects/component.css"  rel="stylesheet" type="text/css" >
+
+        <link href="css/modal_style.css"  rel="stylesheet" type="text/css" >
 
         <!-- fukidashi -->
         <link href="css/fukidashi.css"  rel="stylesheet" type="text/css" >
@@ -65,7 +67,8 @@
                 <!-- nav -->
                 <nav role="header-nav" class="navy">
                   <ul>
-                    <li class="nav-active"><a href="index.html" title="Work">Work</a></li>
+                    <li><a href="index.html" title="Top">Top</a></li>
+                    <li><a href="index.html#Work" title="Work">Work</a></li>
                     <li><a href="about.html" title="About">About</a></li>
                   </ul>
                 </nav>
@@ -84,7 +87,7 @@
                 <header role="work-title">
                   <h2>Hematite Inc.</h2>
                   <div class="work-link">
-                    <a href="https://fe2o3.jp/"　target="_blank">fe2o3.jp<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <a href="https://fe2o3.jp/"　target="_blank">fe2o3.jp <i class="fas fa-external-link-alt"></i></a>
                   </div>
                 </header>
               </div>
@@ -123,16 +126,16 @@
                         </p>
                       </div>
                       <div class="hover-mask">
-                        <div class="feature-points">
-                          <div class="feature-point"></div>
-                            <p class="fukidashi">写真を一面に使用し、ひと目でどんな会社か分かるようにしました</p>
-
+                        <div class="contents-wrap-col">
+                          <div id="demoslide01" class="content-col col1 main_visual bg_aaa modal_open" data-target="h-modal1">
+                            <img src="images/work/Hematite/Hematite_web1.png" alt="" class="content-img"/>
                           </div>
-                          <div class="img-coverd">
-                          <img src="images/work/Hematite/Hematite_1.png" alt="" class="img-responsive img-contents ctf-img1"/>
+                          <div id="demoslide01" class="content-col col1 main_visual bg_aaa modal_open" data-target="h-modal2">
+                            <img src="images/work/Hematite/Hematite_web2.png" alt="" class="content-img"/>
+                          </div>
                         </div>
-                        </div>
-                      </li>
+                      </div>
+                    </li>
 
                       <li>
                         <div class="text-contents">
@@ -144,7 +147,22 @@
                           </p>
                         </div>
                         <div class="hover-mask">
-                          <img src="images/work/Hematite/Hematite_2.png" alt="" class="img-responsive"/>
+                          <div class="hover-mask">
+                            <div class="contents-wrap-col">
+                              <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal3">
+                                <img src="images/work/Hematite/Hematite_flyer1.png" alt="" class="content-img"/>
+                              </div>
+                              <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal4">
+                                <img src="images/work/Hematite/Hematite_flyer2.png" alt="" class="content-img"/>
+                              </div>
+                              <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal5">
+                                <img src="images/work/Hematite/Hematite_flyer3.png" alt="" class="content-img"/>
+                              </div>
+                              <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal6">
+                                <img src="images/work/Hematite/Hematite_flyer4.png" alt="" class="content-img"/>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                       </li>
 
@@ -158,11 +176,102 @@
                           </p>
                         </div>
                         <div class="hover-mask">
-                          <img src="images/work/Hematite/Hematite_3.png" alt="" class="img-responsive"/>
+                          <div class="contents-wrap-col">
+                            <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal7">
+                              <img src="images/work/Hematite/Hematite_nc1.png" alt="" class="content-img"/>
+                            </div>
+                            <div id="demoslide01" class="content-col col2 main_visual bg_aaa modal_open" data-target="h-modal8">
+                              <img src="images/work/Hematite/Hematite_nc2.png" alt="" class="content-img"/>
+                            </div>
+                          </div>
                         </div>
                       </li>
                   </ul>
               </div>
+          </div>
+
+          <div class="modal_wrapper">
+
+            <div id="h-modal1" class="modal_box">
+              <img src="images/work/Hematite/Hematite_web1.png" alt="" class="img-expanded"/>
+              <p>写真を一面に使用し、ひと目でどんな会社か分かるようにしました</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal2" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal2" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal2" class="modal_box">
+              <img src="images/work/Hematite/Hematite_web2.png" alt="" class="img-expanded"/>
+              <p>コーポレートカラーの赤を基調とした色使いにしました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal1" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal1" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal3" class="modal_box">
+              <img src="images/work/Hematite/Hematite_flyer1.png" alt="" class="img-expanded"/>
+              <p>会社概要紹介用のリーフレットです。会社を表すイラストを背後に配置しました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal6" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal4" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal4" class="modal_box">
+              <img src="images/work/Hematite/Hematite_flyer2.png" alt="" class="img-expanded"/>
+              <p>会社のミッションと、ミッション達成のためのアプローチが伝わるようなデザインにしました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal3" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal5" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal5" class="modal_box">
+              <img src="images/work/Hematite/Hematite_flyer3.png" alt="" class="img-expanded"/>
+              <p>インハウス事業の紹介ページです。フライヤー全体のデザインに合わせつつ、視線の移動にも気を配りました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal4" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal6" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal6" class="modal_box">
+              <img src="images/work/Hematite/Hematite_flyer4.png" alt="" class="img-expanded"/>
+              <p>受託ソフトウェア紹介のページです。各事業のイラストも読んだ人がイメージしやすいように制作しました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal5" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal3" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal7" class="modal_box">
+              <img src="images/work/Hematite/Hematite_nc1.png" alt="" class="img-expanded"/>
+              <p>会社の名刺です。コーポレートイメージに沿うようなイラストにしました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal8" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal8" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
+            <div id="h-modal8" class="modal_box">
+              <img src="images/work/Hematite/Hematite_nc2.png" alt="" class="img-expanded"/>
+              <p>会社の名刺です。各情報が見やすくなるようにしました。</p>
+              <div class="link_area">
+                <p class="modal_link"><a data-target="h-modal7" class="modal_switch"><i class="fas fa-chevron-left"></i></a></p>
+                <p class="modal_link"><a data-target="h-modal7" class="modal_switch"><i class="fas fa-chevron-right"></i></a></p>
+              </div>
+              <p><a class="modal_close"><i class="fas fa-times"></i></a></p>
+            </div>
+
           </div>
         </main>
 <!-- main -->
@@ -179,10 +288,10 @@
             </nav>
             <!-- nav -->
             <ul role="social-icons">
-              <li><a class="twitter-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a class="github-link" href="https://github.com/tamachan-1064"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a class="twitter-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="github-link" href="https://github.com/tamachan-1064"><i class="fab fa-github"></i></a></li>
+                <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/"><i class="fab fa-instagram"></i></a></li>
                 <!--<li><a href="https://www.instagram.com/tamai.tmi25/"><img class="fa fa-instagram" src="images/icons/wantedly_logo.svg"></img></a></li>-->
             </ul>
             <p>© 2019 YUICHIRO TAMAI</p>
@@ -211,8 +320,15 @@
 
         <script src="js/effects/modernizr.custom.js"></script>
 
+
+        <script src="js/modal_func.js"  type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
         <!-- jquery.countdown -->
         <script src="js/html5shiv.js" type="text/javascript"></script>
+
+        <script src="https://kit.fontawesome.com/dbd99fe06c.js"></script>
 
     </body>
 
