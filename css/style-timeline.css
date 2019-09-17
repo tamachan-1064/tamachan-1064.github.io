@@ -149,6 +149,12 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
   .cd-timeline__fifth{
     margin-top: 1em;
   }
+  .cd-timeline__sixth{
+    margin-top: -7em;
+  }
+  .cd-timeline__seventh{
+    margin-top: 1em;
+  }
 }
 .cd-timeline__img{
   display:-ms-flexbox;
@@ -219,6 +225,12 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
   border-top: solid 5px #42BBFF;
 }
 .cd-timeline_5{
+  border-top: solid 5px #FF9933;
+}
+.cd-timeline_6{
+  border-top: solid 5px #2D8C3C;
+}
+.cd-timeline_7{
   border-top: solid 5px #AA6BF2;
 }
 
