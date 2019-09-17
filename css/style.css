@@ -969,3 +969,7 @@ footer p{
 	box-shadow: 0 13px 18px -10px rgba(0,0,0,0.12);
 	cursor: pointer;
 }
+
+.top_icon{
+	height: 40px;
+}
