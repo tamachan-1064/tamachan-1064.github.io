@@ -155,6 +155,9 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
   .cd-timeline__seventh{
     margin-top: 1em;
   }
+  .cd-timeline__eighth{
+    margin-top: -7em;
+  }
 }
 .cd-timeline__img{
   display:-ms-flexbox;
@@ -231,6 +234,9 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
   border-top: solid 5px #2D8C3C;
 }
 .cd-timeline_7{
+  border-top: solid 5px #014090;
+}
+.cd-timeline_8{
   border-top: solid 5px #AA6BF2;
 }
 
@@ -257,10 +263,10 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
     margin-top: 0.3em;
     margin-bottom: 0.45em;
     }
-.cd-timeline__content p {
+.cd-timeline__content p{
   font-size: 17px;
 }
-.cd-timeline__content strong{
+.cd-timeline__content strong, .writing-card-texts p {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 0;

@@ -202,7 +202,7 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,
 main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:20px; line-height:30px; color:#454545}
 
 main[role="tools"] ul.tools { width: 66%; padding:0; font-size:0px;} ul.tools li{ width:10%; display: inline-block; text-align: center;} ul.tools li a {display: block;} ul.tools img{margin-right: 12px}
-@media screen and (max-width: 600px) {ul.tools li{ width:15%;}}
+@media screen and (max-width: 600px) {ul.tools li{ width:15%; margin-bottom: 20px}}
 
 main[role="main-wrapper"] div.text-contents {margin-bottom: 30pt}
 
@@ -972,4 +972,83 @@ footer p{
 
 .top_icon{
 	height: 40px;
+}
+
+/*Writing*/
+.writing-row-card {
+    float: left;
+    margin: 17px;
+		max-width: 320px;
+}
+.writing__image {
+    width: 320px;
+    margin-bottom: 15px;
+}
+.writing__image>img {
+    width: 320px;
+    display: block;
+    border-radius: 0.5em;;
+}
+.writing-card-texts h4 {
+	padding-top: 0.6em;
+	font-size: 17px;
+	line-height: 1.6;
+}
+.writing-card-texts p{
+	padding-top: 0.6em;
+}
+.writing-cards :hover .writing__image>img{
+	box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12);
+  transition: .3s ease-in-out;
+  transform: translate(0,-1px);
+}
+
+/*Other Works*/
+.Other-works {
+	background-color: #F0F0F0;
+	padding: 1.5em 0 2em 0;
+	text-align: center;
+}
+.ow-grid {
+	position: relative;
+	display: inline-block;
+}
+.ow-grid :hover .img-responsive{
+	box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12);
+  transition: .3s ease-in-out;
+  transform: translate(0,-1px);
+}
+.ow-grid :hover .Work-text-b{
+  transition: .3s ease-in-out;
+  transform: translate(0,-1px);
+}
+@media only screen and (min-width: 900px){
+	.ow-grid{
+		width:282px;
+	}
+	.ow-grid-right{
+	    margin-left: 3em;
+		}
+	.ow-grid-left{
+	    margin-right: 3em;
+		}
+}
+@media only screen and (max-width: 400px){
+	.ow-grid{
+		width:222px;
+	}
+	.ow-grid-right{
+	    margin-top: 1.5em;
+		}
+	.ow-grid-left{
+	    margin-bottom: 1.5em;
+		}
+}
+.ow-gridlist{
+	margin: auto;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.mini-titles{
+	font-weight: 800;
 }
