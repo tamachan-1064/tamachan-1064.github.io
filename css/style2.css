@@ -698,3 +698,7 @@ xcustom form elements
 .top_icon{
 	height: 40px;
 }
+
+.slider{
+  overflow: auto;
+}

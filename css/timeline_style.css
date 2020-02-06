@@ -1,0 +1,205 @@
+.parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  height: 400px;
+  position: relative;
+  overflow: visible;
+}
+.parent::after {
+  content: "";
+  height: 20px;
+  width: 600px;
+  position: absolute;
+  top: calc(70px + 50px);
+  background-color: #BBBBBB;
+  z-index: 0;
+}
+.parent::before {
+  content: "";
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  bottom: calc(10px + 60px);
+  background-color: #BBBBBB;
+  z-index: 1;
+}
+.parent:nth-child(2n+1)::after {
+  left: calc(10px + 115px);
+  transform-origin: top left;
+  transform: rotate(12deg);
+}
+.parent:nth-child(2n+1)::before {
+  right: calc(10px + 125px);
+  transform-origin: top right;
+  transform: rotate(-90deg);
+}
+.parent:nth-child(2n+1) .child:nth-child(1) {
+  align-self: flex-start;
+}
+.parent:nth-child(2n+1) .child:nth-child(2) {
+  align-self: center;
+}
+.parent:nth-child(2n+1) .child:nth-child(3) {
+  align-self: flex-end;
+}
+.parent:nth-child(2n)::after {
+  right: calc(10px + 60px);
+  transform-origin: top right;
+  transform: rotate(-12deg);
+}
+.parent:nth-child(2n)::before {
+  left: calc(10px + 125px);
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+.parent:nth-child(2n) .child:nth-child(3) {
+  align-self: flex-end;
+}
+.parent:nth-child(2n) .child:nth-child(2) {
+  align-self: center;
+}
+.parent:nth-child(2n) .child:nth-child(1) {
+  align-self: flex-start;
+}
+.parent:last-child::before {
+  height: 0;
+  width: 0;
+}
+.child {
+  background-color: #ffffff;
+  width: 250px;
+  height: 340px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 13px 18px -10px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  /*overflow: hidden;*/
+}
+.child img{
+  width:100%;
+}
+.child h2{
+  color: #fb5353;
+  display: inline-block;
+  border-radius: 5px;
+  background: #fce8e6;
+  text-align:center;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  z-index: 2;
+  font-size: 24px;
+  padding: 10px;
+}
+.timeline-text{
+  padding:22px;
+}
+.child p{
+  font-size: 16px;
+  color: #666666;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+  .parent{
+    display:block;
+    height:auto;
+    padding: 0px;
+  }
+  .child{
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parent {
+    padding: 24px 0 24px 0;
+    height: 400px;
+  }
+  .parent::after {
+    height: 20px;
+    width: 600px;
+    top: calc(70px + 50px);
+  }
+  .parent::before {
+    height: 20px;
+    width: 200px;
+    bottom: calc(10px + 60px);
+  }
+  .parent:nth-child(2n+1)::after {
+    left: calc(10px + 115px);
+    transform: rotate(12deg);
+  }
+  .parent:nth-child(2n+1)::before {
+    right: calc(10px + 125px);
+    transform: rotate(-90deg);
+  }
+  .parent:nth-child(2n)::after {
+    right: calc(10px + 60px);
+    transform: rotate(-12deg);
+  }
+  .parent:nth-child(2n)::before {
+    left: calc(10px + 125px);
+    transform: rotate(90deg);
+  }
+  .child {
+    width: 250px;
+    height: 340px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .parent {
+    padding: 20px 0 20px 0;
+    height: 400px;
+  }
+  .parent::after {
+    height: 20px;
+    width: 600px;
+    top: calc(70px + 50px);
+  }
+  .parent::before {
+    height: 20px;
+    width: 200px;
+    bottom: calc(10px + 60px);
+  }
+  .parent:nth-child(2n+1)::after {
+    left: calc(10px + 240px);
+    transform: rotate(12deg);
+  }
+  .parent:nth-child(2n+1)::before {
+    right: calc(10px + 140px);
+    transform: rotate(-90deg);
+  }
+  .parent:nth-child(2n)::after {
+    right: calc(10px + 240px);
+    transform: rotate(-12deg);
+  }
+  .parent:nth-child(2n)::before {
+    left: calc(10px + 140px);
+    transform: rotate(90deg);
+  }
+  .child {
+    width: 280px;
+    height: 340px;
+  }
+}
+
+.parent:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .parent::after, .parent::before {
+    height: 0;
+  }
+  .child {
+    align-self: center !important;
+  }
+}
