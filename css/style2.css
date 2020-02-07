@@ -694,3 +694,11 @@ xcustom form elements
     display: none;
   }
 }
+
+.top_icon{
+	height: 40px;
+}
+
+.slider{
+  overflow: auto;
+}

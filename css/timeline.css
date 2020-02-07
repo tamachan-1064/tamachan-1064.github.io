@@ -1,0 +1,124 @@
+/*==================================
+    TIMELINE
+==================================*/
+
+    /*-- GENERAL STYLES
+    ------------------------------*/
+    .timeline {
+        line-height: 1.4em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        }
+    }
+
+    /*----- TIMELINE ITEM -----*/
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+    .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+
+    /*----- TIMELINE INFO -----*/
+
+    .timeline-info {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin: 0 0 .5em 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    /*----- TIMELINE MARKER -----*/
+
+    .timeline-marker::before {
+            content: "";
+            width: 3px;
+            background: #BBBBBB;
+            display: block;
+            position: absolute;
+            top: 24px; bottom: 0; left: 6px;
+        }
+        .timeline-item:last-child::after {
+            content: none;
+        }
+
+    /*----- TIMELINE CONTENT -----*/
+    .timeline-content
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+
+    /*----- TIMELINE PERIOD -----*/
+
+    .period {
+        padding: 0;
+      }
+    .timeline-info {
+            display: none;
+        }
+    .timeline-content {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0 50px;
+    }
+    .timeline-title {
+      background: linear-gradient(transparent 60%, #F1C249 60%);
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .timeline-content {
+        flex-direction: column;
+      }
+      .timeline-text{
+        width: 100%;
+      }
+      .timeline-image {
+        width: 100%;
+        margin: 20px 25px 0 20px;
+      }
+    }
+    @media only screen and (min-width: 767px) {
+      .timeline-text{
+        width:60%;
+      }
+      .timeline-image {
+        width: 40%;
+      }
+    }
+    .timeline-title {
+      position: relative;
+    }
+    .timeline-text{
+      margin: 0 25px 0 30px;
+    }
+    .timeline-text p {
+      line-height: 30px;
+    }
+    .timeline-title::before {
+      content: "";
+      background-image: linear-gradient(to right, #BBBBBB, #BBBBBB 5px, transparent 5px, transparent 10px);
+      background-size: 10px 3px;
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 13px;
+      bottom: 0;
+      left: -35px;
+      right: 0;
+      width: 25px;
+    }
+
+    .example-basic {
+      height: 500px;
+      overflow: scroll;
+      background-color: #ffffff;
+      border-radius: 0.25em;
+      box-shadow: 0 20px 40px -10px rgba(0,0,0,0.12);
+    }

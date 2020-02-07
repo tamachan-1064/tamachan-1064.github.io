@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <!-- slick -->
+  <link rel="stylesheet" href="js/slick/slick.css" type="text/css" />
+  <link rel="stylesheet" href="js/slick/slick-theme.css" type="text/css"/>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>-->
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/slick/func_slick.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        autoplay:true,
+        dots:true,
+        draggable:true,
+        swipe:true,
+        pauseOnHover:true,
+      });
+    });
+  </script>
+  </head>
+
+<body>
+
+  <div class="slider">
+    <ul class="lazy">
+      <li><img src="images/work/tk/persona1.png" alt="images/work/tk/persona1.png"></li>
+      <li><img src="images/work/tk/persona2.png" alt="images/work/tk/persona2.png"></li>
+    </ul>
+  </div>
+
+<div>
+  <script async class="speakerdeck-embed" data-id="9db38a292dc044beb68d7a487665ac7a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+</div>
+
+</body>
+
+</html>

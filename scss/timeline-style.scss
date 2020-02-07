@@ -1,0 +1,89 @@
+//math-sass　があれば、線の傾きを計算可能
+.parent{
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  height: 240px;
+  position: relative;
+  overflow: visible;
+  &::after{
+    content: "";
+    height: 10px;
+    width: 550px;
+    position: absolute;
+    top: calc(10px + 60px);
+    background-color: white;
+    z-index: 0;
+  }
+  &::before{
+    content: "";
+    height: 10px;
+    width: 100px;
+    position: absolute;
+    bottom: calc(10px + 60px);
+    background-color: blue;
+    z-index: 1;
+  }
+
+
+  &:nth-child(2n+1) {
+    &::after{
+      left: calc(10px + 60px);
+      transform-origin: top left;
+      transform: rotate(12deg);
+    }
+    &::before{
+      right: calc(10px + 60px);
+      transform-origin: top right;
+      transform: rotate(-90deg);
+    }
+    .child:nth-child(1){
+      align-self: flex-start;
+    }
+    .child:nth-child(2){
+      align-self: center;
+    }
+    .child:nth-child(3){
+      align-self: flex-end;
+    }
+  }
+
+  &:nth-child(2n){
+    &::after{
+      right: calc(10px + 60px);
+      transform-origin: top right;
+      transform: rotate(-12deg);
+    }
+    &::before{
+      left: calc(10px + 60px);
+      transform-origin: top left;
+      transform: rotate(90deg);
+    }
+    .child:nth-child(1){
+      align-self: flex-end;
+    }
+    .child:nth-child(2){
+      align-self: center;
+    }
+    .child:nth-child(3){
+      align-self: flex-start;
+    }
+  }
+  &:last-child{
+    &::before{
+      height: 0;
+      width: 0;
+    }
+  }
+}
+
+.child{
+  background-color: #123456;
+  width: 120px;
+  height: 120px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
