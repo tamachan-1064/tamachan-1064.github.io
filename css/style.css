@@ -163,6 +163,8 @@ header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;he
 
 @media (min-width: 768px) {header[role="header"] nav #menu-button{position: fixed;right: 10%;} header[role="header"] h1 > a{position:fixed;}}
 
+@media (min-width: 2560px) {header[role="header"] nav #menu-button{right: 20%;}}
+
 header[role="header"] nav #menu-button span {display: block;position: absolute;z-index: 60;height: 3px;
 
 width: 100%;background: #111111;opacity: 1;left: 0;
@@ -1100,3 +1102,10 @@ footer p{
 .sub-text p{text-align:center;margin-top:20px; padding:0px;}
 
 .mp4video {text-align:center;}
+
+/*4K*/
+@media (min-width: 2560px){
+.container {
+    width: 1300px;
+	}
+}

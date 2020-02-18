@@ -158,7 +158,7 @@
   }
   .parent::after {
     height: 20px;
-    width: 600px;
+    width: 700px;
     top: calc(70px + 50px);
   }
   .parent::before {
