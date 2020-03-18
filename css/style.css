@@ -148,7 +148,7 @@ header[role="header"] nav{ padding-top:10px;transition-delay: 0s;
 
 transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
-header[role="header"] nav ul{ display:none; position: fixed; z-index:99; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(255,255,255,0.8); padding:0; margin:0; padding-top:30%;}
+header[role="header"] nav ul{ display:none; position: fixed; z-index:99; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(255,255,255,0.8); padding:0; margin:0; padding-top:25%;}
 
 header[role="header"] nav ul > li{ font-weight:800; font-size:42px; display:block}
 
@@ -210,7 +210,7 @@ main[role="tools"] ul.tools { width: 66%; padding:0; font-size:0px;} ul.tools li
 
 main[role="main-wrapper"] div.text-contents {margin-bottom: 30pt}
 
-main[role="main-wrapper"] div.text-contents h3{font-size:26px; line-height:22px; font-weight:700; margin:20pt 0 30pt 0; text-align: center;}
+main[role="main-wrapper"] div.text-contents h3{font-size:26px; line-height:30px; font-weight:700; margin:20pt 0 30pt 0; text-align: center;}
 
 main[role="main-wrapper"] div.text-contents p{text-align: center;; padding: 0 6%}
 
@@ -307,7 +307,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 /*== Work Details ==*/
 
 .work-details,.blog-details{ margin-top:73px; margin-bottom: 60px}
-@media screen and (min-width: 600px) {.work-details,.blog-details{padding:0 69px;}}
+/*@media screen and (min-width: 600px) {.work-details,.blog-details{padding:0 69px;}}*/
 
 .work-details header h2{ color:#343434; font-size:36px; font-weight:800}
 
@@ -320,7 +320,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .work-details header a:hover i{ color:#FFA1A1}
 
-/*.work-details p,*/ .col-xs-12 p, .text-contents p, .footer p, .sub-text p{ font-size:16px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:400; text-align: left}
+/*.work-details p,*/ .col-xs-12 p, .text-contents p, .footer p, .sub-text p, .overview-show p{ font-size:16px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:400; text-align: left}
 
 .work-details p strong{ font-weight:800; color:#fb5353}
 
@@ -915,6 +915,11 @@ footer p{
 			margin-left:auto;
 			margin-right:auto;
 	}
+	.overview-show{
+		width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+	}
 }
 
 .grid-lod {
@@ -993,9 +998,12 @@ footer p{
     display: block;
     border-radius: 0.5em;;
 }
+.writing-cards{
+	white-space:normal;
+}
 .writing-card-texts h4 {
 	padding-top: 0.6em;
-	font-size: 17px;
+	font-size: 14px;
 	line-height: 1.6;
 }
 .writing-card-texts p{
@@ -1103,9 +1111,109 @@ footer p{
 
 .mp4video {text-align:center;}
 
+.writing-link{
+	display: inline-block;
+}
+.scroll-wrapper{
+	display: inline-block;
+	white-space: nowrap;
+	width: 100%;
+	max-width: 100%;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	flex: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.scroll-inner{
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+
 /*4K*/
 @media (min-width: 2560px){
-.container {
-    width: 1300px;
+	.container {
+	  width: 1300px;
 	}
+	.Header__title {
+    font-size: 4vw;
+	}
+}
+
+.overview-show{
+	padding: 0 5%;
+	margin-bottom: 7em;
+}
+@media only screen and (min-width: 900px){
+	.overview-info {
+			display: flex;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.overview-title {
+	    margin: 0 0 1em;
+	}
+}
+
+.overview-info {
+    border: solid 1px #9D9D9D;
+    margin: 2em 0 1em;
+    padding: 2.3em 3em 2.2em;
+    border-radius: 4px;
+}
+.overview-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.1;
+		margin-top: 0.2em;
+    margin-right: 1.8em;
+    letter-spacing: 3px;
+    white-space: nowrap;
+		font-weight: 700;
+}
+.overview-show ul {
+  list-style: none;
+}
+.overview-show li{
+	font-size: 16px;
+	color: #353535;
+	line-height: 30px;
+}
+.overview-show li:before {
+  font-family: FontAwesome;
+  content: '\f0da';
+	font-size: 16px;
+	color: #353535;
+	line-height: 30px;
+	margin-right: 0.2em;
+}
+
+
+.ribbon14 {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 2;
+  width: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  background: #FB5353;
+}
+
+.ribbon14:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 0;
+  width: 0;
+  border-left: 20px solid #FB5353;
+  border-right: 20px solid #FB5353;
+  border-bottom: 10px solid transparent;
 }

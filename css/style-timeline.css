@@ -183,13 +183,16 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
     margin-top: -7em;
   }
   .cd-timeline__seventh{
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
   .cd-timeline__eighth{
     margin-top: -7em;
   }
   .cd-timeline__ninth{
-    margin-top: 1em;
+    margin-top: 0em;
+  }
+  .cd-timeline__tenth{
+    margin-top: -5em;
   }
 }
 .cd-timeline__img{
@@ -270,6 +273,9 @@ root,[data-theme="default"]{}@supports (--css: variables){@media (min-width: 64r
   border-top: solid 5px #014090;
 }
 .cd-timeline_9{
+  border-top: solid 5px #E6000D;
+}
+.cd-timeline_10{
   border-top: solid 5px #AA6BF2;
 }
 
