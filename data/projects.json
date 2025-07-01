@@ -1,0 +1,31 @@
+{
+  "ctfkit": {
+    "title": "CTFKit",
+    "slug": "CTFKit",
+    "role": "Web application design, Web design, Coding, Flyer design",
+    "year": "2018~",
+    "link": "http://ctfkit.com/",
+    "linkText": "ctfkit.com",
+    "techniques": [
+      {"name": "Illustrator", "icon": "illustrator.svg"},
+      {"name": "Figma", "icon": "Figma.svg"},
+      {"name": "Sketch", "icon": "sketch.svg"}
+    ],
+    "overview": "アルバイト先にて制作した、情報セキュリティ技術者育成のためのWebアプリケーションです。",
+    "features": [
+      "教育兼競技という用途のため、遊びと真面目を兼ね備えたデザイン",
+      "エンジニア及び経営層を巻き込み仕様を議論"
+    ],
+    "billboard": "images/work/CTFKit/CTFKit_billboard.png",
+    "sections": [
+      {
+        "title": "Webアプリケーションデザイン",
+        "description": "ロゴを元にイメージを膨らませ、シンプルかつモダンなUIにすることで、ユーザーが競技にのめり込める経験を提供できるような84画面を制作しました。",
+        "images": [
+          {"src": "images/work/CTFKit/Question.png", "modal": "c-modal1"},
+          {"src": "images/work/CTFKit/QuestionBoard.png", "modal": "c-modal2"}
+        ]
+      }
+    ]
+  }
+}

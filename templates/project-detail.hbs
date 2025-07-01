@@ -1,0 +1,52 @@
+<main role="main-wrapper" class="">
+    <div class="work-details container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <header role="work-title">
+                    <h2>{{project.title}}</h2>
+                    {{#if project.link}}
+                    <div class="work-link">
+                        <a href="{{project.link}}" target="_blank">
+                            {{project.linkText}} <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    {{/if}}
+                </header>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <section>
+                    <p><strong>Role</strong><br/>{{project.role}}</p>
+                    <p><strong>Year</strong><br/>{{project.year}}</p>
+                    <p><strong>Techniques</strong><br/></p>
+                    <ul class="tools">
+                        {{#each project.techniques}}
+                        <li><img src="images/icons/{{this.icon}}" alt="{{this.name}}" class="img-toolicons"/></li>
+                        {{/each}}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <article>
+        <img src="{{project.billboard}}" alt="billboard" class="billboard"/>
+    </article>
+
+    <div class="work-details container">
+        <div class="overview-show">
+            <div class="overview-info">
+                <div class="overview-title">OVERVIEW</div>
+                <div>
+                    <p class="overview-abstract">{{project.overview}}</p>
+                    {{#if project.features}}
+                    <ul>
+                        {{#each project.features}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

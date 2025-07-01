@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>{{#if page.title}}{{page.title}} - {{/if}}{{site.name}}</title>
+    <link rel="shortcut icon" href="{{site.favicon}}" type="image/x-icon">
+
+    {{#each site.commonCss}}
+    <link href="{{this}}" rel="stylesheet" type="text/css">
+    {{/each}}
+    
+    {{#each site.commonFonts}}
+    <link href="{{this}}" rel="stylesheet">
+    {{/each}}
+</head>
+<body>
+    {{> header}}
+    
+    {{{content}}}
+    
+    {{> footer}}
+</body>
+</html>

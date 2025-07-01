@@ -1,0 +1,36 @@
+{
+  "name": "Yuichiro's portfolio site",
+  "author": "Yuichiro Tamai",
+  "description": "玉井雄一郎のポートフォリオサイト",
+  "url": "https://tamachan-1064.github.io/",
+  "ogImage": "https://tamachan-1064.github.io/images/home-images/OGP.png",
+  "twitter": "@Tamaaai2",
+  "googleAnalyticsId": "UA-111262881-1",
+  "favicon": "images/favicon_yt.ico",
+  "logo": "images/logo_yt1.png",
+  "navigation": [
+    {
+      "title": "Works",
+      "url": "index.html#Work",
+      "key": "works"
+    },
+    {
+      "title": "About",
+      "url": "about.html",
+      "key": "about"
+    }
+  ],
+  "commonCss": [
+    "css/style.css",
+    "css/bootstrap.min.css",
+    "css/responsive.css",
+    "css/font-awesome.min.css",
+    "css/effects/set2.css",
+    "css/effects/normalize.css",
+    "css/effects/component.css"
+  ],
+  "commonFonts": [
+    "https://fonts.googleapis.com/earlyaccess/notosansjapanese.css",
+    "https://fonts.googleapis.com/css?family=Sriracha&display=swap"
+  ]
+}
