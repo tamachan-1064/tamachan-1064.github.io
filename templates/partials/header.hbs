@@ -1,0 +1,18 @@
+<header role="header">
+    <div class="container">
+        <h1>
+            <a href="index.html" title="{{site.name}}">
+                <img class="top_icon" src="{{site.logo}}" alt="YT"/>
+            </a>
+        </h1>
+        <nav role="header-nav" class="navy">
+            <ul>
+                {{#each site.navigation}}
+                <li {{#if (eq ../page.activeNav this.key)}}class="nav-active"{{/if}}>
+                    <a href="{{this.url}}" title="{{this.title}}">{{this.title}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+</header>
