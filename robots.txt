@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tamachan-1064.github.io/sitemap.xml
+
+# Disallow test files
+Disallow: /test.html
+Disallow: /patrickkunka-mixitup-74d1107/

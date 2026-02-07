@@ -18,19 +18,25 @@
         <meta charset="utf-8">
 
         <!-- Description, Keywords and Author -->
+        <meta name="description" content="玉井雄一郎のプロフィール、経歴、スキル。UI/UXデザイナーとして、様々な企業でのインターン経験や受賞歴、執筆活動について紹介しています。">
+        <meta name="keywords" content="UI/UXデザイナー, プロフィール, 経歴, スキル, 玉井雄一郎">
+        <meta name="author" content="Yuichiro Tamai">
+        
+        <!-- Open Graph Protocol -->
+        <meta property="og:type" content="profile"/>
+        <meta property="og:url" content="https://tamachan-1064.github.io/about.html"/>
+        <meta property="og:title" content="About - Yuichiro Tamai"/>
+        <meta property="og:description" content="玉井雄一郎のプロフィール、経歴、スキル。UI/UXデザイナーとして、様々な企業でのインターン経験や受賞歴、執筆活動について紹介しています。"/>
+        <meta property="og:locale" content="ja_JP" />
 
-        <meta name="description" content="">
-
-        <meta name="author" content="">
-
-
-
-        <title>Yuichiro's portfolio site</title>
+        <title>About - Yuichiro Tamai | UI/UXデザイナー</title>
 
 		<link rel="shortcut icon" href="images/favicon_yt.ico" type="image/x-icon">
 
 
 
+        <!-- Design System -->
+        <link href="css/design-system.css" rel="stylesheet" type="text/css">
         <!-- style -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <!-- style -->
@@ -70,21 +76,24 @@
 
 
     <body>
+        <!-- Skip to main content link for accessibility -->
+        <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
     	<!-- header -->
-        	<header role="header">
+        	<header role="banner">
           	<div class="container">
             	<!-- logo -->
               	<h1>
-                  <a href="index.html" title="avana LLC"><img class="top_icon" src="images/logo_yt1.png" title="Yuichiro_portfolio_site" alt="Yuichiro_portfolio_site"/></a>
+                  <a href="index.html" title="Yuichiro Tamai ポートフォリオサイト トップページ" aria-label="Yuichiro Tamai ポートフォリオサイト トップページ"><img class="top_icon" src="images/logo_yt1.png" alt="Yuichiro Tamai ロゴ" loading="lazy"/></a>
                 </h1>
               <!-- logo -->
 
               <!-- nav -->
-                <nav role="header-nav" class="navy">
-                  <ul>
-                    <li><a href="index.html" title="Top">Top</a></li>
-                    <li><a href="index.html#Work" title="Work">Works</a></li>
-                    <li><a href="about.html" title="About">About</a></li>
+                <nav role="navigation" class="navy" aria-label="メインナビゲーション">
+                  <ul role="menubar">
+                    <li role="none"><a role="menuitem" href="index.html" title="トップページ">Top</a></li>
+                    <li role="none"><a role="menuitem" href="index.html#Work" title="作品一覧">Works</a></li>
+                    <li role="none" class="nav-active"><a role="menuitem" href="about.html" title="プロフィール" aria-current="page">About</a></li>
                   </ul>
                 </nav>
               <!-- nav -->
@@ -93,13 +102,13 @@
         <!-- header -->
 
         <!-- main -->
-        <main class="container container-about">
+        <main id="main-content" role="main" class="container container-about">
           <h1>About</h1>
             <section class="fdb-block">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6 mb-4 mb-md-0 about-img">
-                    <img alt="image" class="img-fluid" src="images/about-images/portfolio_profile.jpeg">
+                    <img alt="玉井雄一郎のプロフィール写真" class="img-fluid" src="images/about-images/portfolio_profile.jpeg" loading="eager" width="600" height="600">
                   </div>
                   <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left">
                     <h2>YUICHIRO TAMAI</h2>
@@ -107,15 +116,15 @@
                     2021年修了予定 24歳</p>
                     <div class="profile-links">
                       <div class="wantedly">
-                        <a class="link-img" href="https://www.wantedly.com/users/49422513" target="_blank">
+                        <a class="link-img" href="https://www.wantedly.com/users/49422513" target="_blank" rel="noopener noreferrer" aria-label="Wantedlyプロフィール（新しいタブで開く）">
                           <div class="link-text">Wantedly</div>
-                          <img alt="image" class="kink-icon" src="images/home-icons/wantedly_logo.svg">
+                          <img alt="Wantedly ロゴ" class="kink-icon" src="images/home-icons/wantedly_logo.svg" loading="lazy">
                         </a>
                       </div>
                       <div class="redesigner">
-                        <a class="link-img" href="https://student.redesigner.jp/students/b705ed35ed81cc97c3f9c117ab503479" target="_blank">
+                        <a class="link-img" href="https://student.redesigner.jp/students/b705ed35ed81cc97c3f9c117ab503479" target="_blank" rel="noopener noreferrer" aria-label="ReDesignerプロフィール（新しいタブで開く）">
                           <div class="link-text">ReDesigner</div>
-                          <img alt="image" class="kink-icon" src="images/home-icons/redesigner_logo.svg">
+                          <img alt="ReDesigner ロゴ" class="kink-icon" src="images/home-icons/redesigner_logo.svg" loading="lazy">
                         </a>
                       </div>
                     </div>
@@ -132,10 +141,10 @@
             </section>
         </main>
 
-        <main role="main-inner-wrapper" class="container">
+        <section role="region" class="container" aria-labelledby="experience-heading">
 <!-- Comments -->
           <div class="comments-pan">
-            <h2>Experience</h2>
+            <h2 id="experience-heading">Experience</h2>
               <div class="ex-list-wrapper">
                 <div class="content-box">
                   <ul class="ex-list">
@@ -154,7 +163,8 @@
           </div>
 
 
-          <section class="cd-timeline js-cd-timeline">
+          <div class="cd-timeline js-cd-timeline" role="region" aria-labelledby="timeline-heading">
+            <h2 id="timeline-heading" class="sr-only">経歴タイムライン</h2>
             <div class="container max-width-lg cd-timeline__container">
               <div class="cd-timeline__block cd-timeline__first">
                 <div class="cd-timeline__img cd-timeline__img--picture">
@@ -304,10 +314,10 @@
                 </div> <!-- cd-timeline__content -->
               </div> <!-- cd-timeline__block -->
             </div>
-          </section> <!-- cd-timeline -->
+          </div> <!-- cd-timeline -->
 
           <div class="comments-pan">
-          	<h2>Awards / Published</h2>
+          	<h2 id="awards-heading">Awards / Published</h2>
               <ul class="comments-award">
               <h3>受賞：</h3>
                 <li>2020.02.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -341,101 +351,101 @@
           </div>
 
 
-          <section class="section-wrapper">
+          <div class="section-wrapper" role="region" aria-labelledby="writing-heading">
             <div class="container-fluid">
                 <div class="col-md-12">
                   <div class="section-title comments-pan">
-                    <h2>Writing</h2>
+                    <h2 id="writing-heading">Writing</h2>
                   </div>
                 </div>
             </div>
             <div class="scroll-wrapper">
             <div class="scroll-inner">
-            <a class="writing-link" href="https://note.mu/tmi_1064/n/nb2b5e3d84008" target="_blank">
+            <a class="writing-link" href="https://note.mu/tmi_1064/n/nb2b5e3d84008" target="_blank" rel="noopener noreferrer" aria-label="クックパッドのサマーインターン2019に参加してきました（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/cookpad_top.png"/>
+                      <img src="images/about-images/cookpad_top.png" alt="クックパッドサマーインターン記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2019.09</p>
+                    <p><time datetime="2019-09">2019.09</time></p>
                     <h4>クックパッドのサマーインターン2019に参加してきました【Note】</h4>
                   </div>
                 </div>
               </div>
             </a>
-            <a class="writing-link" href="https://goodpatch.com/blog/crazys8/" target="_blank">
+            <a class="writing-link" href="https://goodpatch.com/blog/crazys8/" target="_blank" rel="noopener noreferrer" aria-label="短時間で複数のアイデアを創出できる「クレイジー8」とは？（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/crazy8_top.png"/>
+                      <img src="images/about-images/crazy8_top.png" alt="クレイジー8記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2019.05.08</p>
+                    <p><time datetime="2019-05-08">2019.05.08</time></p>
                     <h4>短時間で複数のアイデアを創出できる「クレイジー8」とは？</h4>
                   </div>
                 </div>
               </div>
             </a>
-            <a class="writing-link" href="https://goodpatch.com/blog/userinterviews/" target="_blank">
+            <a class="writing-link" href="https://goodpatch.com/blog/userinterviews/" target="_blank" rel="noopener noreferrer" aria-label="UXデザインにおけるユーザーインタビューとは？（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/userinterview_top.png"/>
+                      <img src="images/about-images/userinterview_top.png" alt="ユーザーインタビュー記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2019.04.18</p>
+                    <p><time datetime="2019-04-18">2019.04.18</time></p>
                     <h4>UXデザインにおけるユーザーインタビューとは？方法・種類・実例ノウハウ集</h4>
                   </div>
                 </div>
               </div>
             </a>
-            <a class="writing-link" href="https://goodpatch.com/blog/teambuilding/" target="_blank">
+            <a class="writing-link" href="https://goodpatch.com/blog/teambuilding/" target="_blank" rel="noopener noreferrer" aria-label="チームの士気を高めビジネスを成功に導く。チームビルディングの目的・効果・方法（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/teambuilding_top.png"/>
+                      <img src="images/about-images/teambuilding_top.png" alt="チームビルディング記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2019.02.26</p>
+                    <p><time datetime="2019-02-26">2019.02.26</time></p>
                     <h4>チームの士気を高めビジネスを成功に導く。チームビルディングの目的・効果・方法</h4>
                   </div>
                 </div>
               </div>
             </a>
-            <a class="writing-link" href="https://goodpatch.com/blog/ice-breaking/" target="_blank">
+            <a class="writing-link" href="https://goodpatch.com/blog/ice-breaking/" target="_blank" rel="noopener noreferrer" aria-label="会議やイベントで活用！簡単に準備できるアイスブレイクのワーク（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/icebreak_top.png"/>
+                      <img src="images/about-images/icebreak_top.png" alt="アイスブレイク記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2019.11.21</p>
+                    <p><time datetime="2019-11-21">2019.11.21</time></p>
                     <h4>会議やイベントで活用！簡単に準備できるアイスブレイクのワーク</h4>
                   </div>
                 </div>
               </div>
             </a>
-            <a class="writing-link" href="https://goodpatch.com/blog/usability-test/" target="_blank">
+            <a class="writing-link" href="https://goodpatch.com/blog/usability-test/" target="_blank" rel="noopener noreferrer" aria-label="サービス開発・改善に欠かせない、ユーザビリティテストのやり方（新しいタブで開く）">
               <div class="writing-cards">
                 <div class="writing-row-card">
                   <div class="col-md-25 col-sm-50 ">
                     <figure class="writing__image">
-                      <img src="images/about-images/usabilitytest_top.png"/>
+                      <img src="images/about-images/usabilitytest_top.png" alt="ユーザビリティテスト記事のサムネイル" loading="lazy"/>
                     </figure>
                   </div>
                   <div class="writing-card-texts">
-                    <p>2018.10.31</p>
+                    <p><time datetime="2018-10-31">2018.10.31</time></p>
                     <h4>サービス開発・改善に欠かせない、ユーザビリティテストのやり方【準備〜実施〜分析まで】</h4>
                   </div>
                 </div>
@@ -443,14 +453,14 @@
             </a>
           </div>
           </div>
-          </section>
+          </div>
 
 
-          <section class="section-wrapper skills-wrapper">
+          <div class="section-wrapper skills-wrapper" role="region" aria-labelledby="skills-heading-detail">
             <div class="container-fluid">
                 <div class="col-md-12">
                   <div class="section-title comments-pan">
-                    <h2>Skills</h2>
+                    <h2 id="skills-heading-detail">Skills</h2>
                   </div>
                 </div>
             </div>
@@ -695,39 +705,39 @@
               </div>
 
             </div>
-          </section>
+          </div>
 
 
         <div class="container">
-            <article>
+            <div>
                 <div class="col-100 text-center">
-                    <button id="reset-button" class="button" style="padding: 5px 20px">Reset</button>
+                    <button id="reset-button" class="button" style="padding: 5px 20px" aria-label="スキルプログレスバーをリセット">Reset</button>
                 </div>
-            </article>
+            </div>
         </div>
 
-        </main>
+        </section>
     	<!-- main end -->
 
       <!-- footer -->
-      <footer role="footer">
+      <footer role="contentinfo">
           <!-- nav -->
-          <nav role="footer-nav">
+          <nav role="navigation" aria-label="フッターナビゲーション">
             <ul>
-                <li><a href="index.html" title="Work">Works</a></li>
-                <li><a href="about.html" title="About">About</a></li>
-                <!--<li><a href="contact.html" title="Contact">Contact</a></li>-->
+                <li><a href="index.html" title="作品一覧">Works</a></li>
+                <li><a href="about.html" title="プロフィール">About</a></li>
+                <!--<li><a href="contact.html" title="お問い合わせ">Contact</a></li>-->
               </ul>
           </nav>
           <!-- nav -->
-          <ul role="social-icons">
-            <li><a class="twitter-link" href="https://twitter.com/Tamaaai2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a class="github-link" href="https://github.com/tamachan-1064"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-              <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <!--<li><a href="https://www.instagram.com/tamai.tmi25/"><img class="fa fa-instagram" src="images/icons/wantedly_logo.svg"></img></a></li>-->
+          <ul role="list" aria-label="ソーシャルメディアリンク">
+            <li><a class="twitter-link" href="https://twitter.com/Tamaaai2" target="_blank" rel="noopener noreferrer" aria-label="Twitter（新しいタブで開く）"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525" target="_blank" rel="noopener noreferrer" aria-label="Facebook（新しいタブで開く）"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a class="github-link" href="https://github.com/tamachan-1064" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新しいタブで開く）"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/" target="_blank" rel="noopener noreferrer" aria-label="Instagram（新しいタブで開く）"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <!--<li><a href="https://www.instagram.com/tamai.tmi25/" target="_blank" rel="noopener noreferrer"><img class="fa fa-instagram" src="images/icons/wantedly_logo.svg" alt=""></a></li>-->
           </ul>
-          <p>© 2020 YUICHIRO TAMAI</p>
+          <p><small>© 2020 YUICHIRO TAMAI</small></p>
       </footer>
       <!-- footer -->
 
