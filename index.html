@@ -19,22 +19,37 @@
         <meta charset="utf-8">
 
         <!-- Description-->
+        <meta name="description" content="玉井雄一郎のポートフォリオサイト。UI/UXデザイナーとして、Web・モバイルアプリデザイン、フライヤー、ロゴデザインなど様々なプロジェクトを手がけています。">
+        <meta name="keywords" content="UI/UXデザイナー, ポートフォリオ, Webデザイン, モバイルアプリデザイン, 玉井雄一郎">
         <meta name="author" content="Yuichiro Tamai">
+        
+        <!-- Open Graph Protocol -->
         <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://tamachan-1064.github.io/"/>
+        <meta property="og:title" content="Yuichiro Tamai - UI/UXデザイナー ポートフォリオ"/>
+        <meta property="og:description" content="玉井雄一郎のポートフォリオサイト。UI/UXデザイナーとして、Web・モバイルアプリデザイン、フライヤー、ロゴデザインなど様々なプロジェクトを手がけています。"/>
+        <meta property="og:image" content="https://tamachan-1064.github.io/images/home-images/OGP.png" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:site_name" content="Yuichiro Tamai Portfolio" />
+        
+        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@Tamaaai2"/>
-        <meta property="og:url" content="https://tamachan-1064.github.io/"/>
-        <meta property="og:title" content="Yuichiro's portfolio site"/>
-        <meta property="og:description" content="玉井雄一郎のポートフォリオサイト"/>
-        <meta property="og:image" content="https://tamachan-1064.github.io/images/home-images/OGP.png" />
+        <meta name="twitter:creator" content="@Tamaaai2"/>
+        <meta name="twitter:title" content="Yuichiro Tamai - UI/UXデザイナー ポートフォリオ">
+        <meta name="twitter:description" content="玉井雄一郎のポートフォリオサイト。UI/UXデザイナーとして、Web・モバイルアプリデザイン、フライヤー、ロゴデザインなど様々なプロジェクトを手がけています。">
+        <meta name="twitter:image" content="https://tamachan-1064.github.io/images/home-images/OGP.png">
 
 
 
-        <title>Yuichiro's portfolio site</title>
+        <title>Yuichiro Tamai - UI/UXデザイナー ポートフォリオ</title>
 
 		<link rel="shortcut icon" href="images/favicon_yt.ico" type="image/x-icon">
 
 
+
+        <!-- Design System -->
+        <link href="css/design-system.css" rel="stylesheet" type="text/css">
 
         <!-- style -->
 
@@ -70,28 +85,64 @@
         <link href="css/top-view.css"  rel="stylesheet" type="text/css" >
         <script src="js/modernizr.js"></script>
 
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "玉井雄一郎",
+          "alternateName": "Yuichiro Tamai",
+          "url": "https://tamachan-1064.github.io/",
+          "image": "https://tamachan-1064.github.io/images/about-images/portfolio_profile.jpeg",
+          "jobTitle": "UI/UXデザイナー",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "関西学院大学大学院"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "明石工業高等専門学校"
+          },
+          "sameAs": [
+            "https://twitter.com/Tamaaai2",
+            "https://www.facebook.com/yuichiro0525",
+            "https://github.com/tamachan-1064",
+            "https://www.instagram.com/tamai.tmi25/",
+            "https://www.wantedly.com/users/49422513"
+          ],
+          "knowsAbout": [
+            "UI/UXデザイン",
+            "Webデザイン",
+            "モバイルアプリデザイン",
+            "グラフィックデザイン",
+            "フロントエンド開発"
+          ]
+        }
+        </script>
+
 	</head>
 
 
 
     <body>
 
-
+        <!-- Skip to main content link for accessibility -->
+        <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999;">メインコンテンツへスキップ</a>
 
     	<!-- header -->
-        	<header role="header">
+        	<header role="banner">
             	<div class="container">
                 	<!-- logo -->
                     	<h1>
-                        	<a href="index.html" title="Yuichiro_portfolio"><img class="top_icon" src="images/logo_yt1.png" alt="YT"/></a>
+                        	<a href="index.html" title="Yuichiro Tamai ポートフォリオサイト トップページ" aria-label="Yuichiro Tamai ポートフォリオサイト トップページ"><img class="top_icon" src="images/logo_yt1.png" alt="Yuichiro Tamai ロゴ" loading="lazy"/></a>
                         </h1>
                     <!-- logo -->
                     <!-- nav -->
-                    <nav role="header-nav" class="navy">
-                        <ul>
-                            <li class="nav-active"><a href="index.html#Work" title="Work">Works</a></li>
-                            <li><a href="about.html" title="About">About</a></li>
-                            <!--<li><a href="contact.html" title="Contact">Contact</a></li>-->
+                    <nav role="navigation" class="navy" aria-label="メインナビゲーション">
+                        <ul role="menubar">
+                            <li role="none" class="nav-active"><a role="menuitem" href="index.html#Work" title="作品一覧">Works</a></li>
+                            <li role="none"><a role="menuitem" href="about.html" title="プロフィール">About</a></li>
+                            <!--<li role="none"><a role="menuitem" href="contact.html" title="お問い合わせ">Contact</a></li>-->
                         </ul>
                     </nav>
                     <!-- nav -->
@@ -100,10 +151,11 @@
         <!-- header -->
 
         <!-- main -->
-        <main role="main-home-wrapper" class="container eye-chatch">
+        <main id="main-content" role="main" class="container eye-chatch">
 
             <div class="Header1">
-              <svg class="Header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1337.97 684.43">
+              <svg class="Header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1337.97 684.43" aria-hidden="true" role="img" aria-label="装飾的な幾何学模様">
+                <title>装飾的な幾何学模様</title>
                 <path class="Header__shape bigSquare" fill="#fb5353" d="M546.519 349.271l86.383-56.098 56.097 86.383-86.383 56.098z"/>
                 <path class="Header__shape triangle" fill="none" stroke="#fb5353" stroke-width="8" d="M372.15 462.17L321 434.58l-4.88 56.16z"/>
                 <circle class="Header__shape bigCircle" fill="#fb5353" cx="1076.52" cy="262.17" r="59"/>
@@ -111,9 +163,9 @@
                 <circle class="Header__shape hoop" fill="none" stroke="#bbbbbb" stroke-width="13" cx="905.52" cy="447.17" r="45"/>
                 <circle class="Header__shape littleCircle" fill="#ffa1a1"cx="1036.52" cy="203.17" r="27"/>
               </svg>
-                <!--<img class="Header__shape octagon" src="images/home-icons/octagon.svg"/>-->
+                <!--<img class="Header__shape octagon" src="images/home-icons/octagon.svg" alt=""/>-->
               <div class="">
-                <h3 class="Header__title">YUICHIRO TAMAI</h3>
+                <h2 class="Header__title">YUICHIRO TAMAI</h2>
                 <p class="Header__subtext">PORTFOLIO SITE</p>
             </div>
             </div>
@@ -121,13 +173,13 @@
         </main>
 
 
-        <main class="container container-about">
-          <h1>About</h1>
-            <section class="fdb-block">
+        <section class="container container-about" aria-labelledby="about-heading">
+          <h1 id="about-heading">About</h1>
+            <div class="fdb-block">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6 mb-4 mb-md-0 about-img">
-                    <img alt="image" class="img-fluid" src="images/about-images/portfolio_profile.jpeg">
+                    <img alt="玉井雄一郎のプロフィール写真" class="img-fluid" src="images/about-images/portfolio_profile.jpeg" loading="lazy" width="600" height="600">
                   </div>
                   <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left">
                     <h2>YUICHIRO TAMAI</h2>
@@ -135,97 +187,97 @@
                     2021年修了予定 24歳</p>
                     <div class="profile-links">
                       <div class="wantedly">
-                        <a class="link-img" href="https://www.wantedly.com/users/49422513" target="_blank">
+                        <a class="link-img" href="https://www.wantedly.com/users/49422513" target="_blank" rel="noopener noreferrer" aria-label="Wantedlyプロフィール（新しいタブで開く）">
                           <div class="link-text">Wantedly</div>
-                          <img alt="image" class="kink-icon" src="images/home-icons/wantedly_logo.svg">
+                          <img alt="Wantedly ロゴ" class="kink-icon" src="images/home-icons/wantedly_logo.svg" loading="lazy">
                         </a>
                       </div>
                       <div class="redesigner">
-                        <a class="link-img" href="https://student.redesigner.jp/students/b705ed35ed81cc97c3f9c117ab503479" target="_blank">
+                        <a class="link-img" href="https://student.redesigner.jp/students/b705ed35ed81cc97c3f9c117ab503479" target="_blank" rel="noopener noreferrer" aria-label="ReDesignerプロフィール（新しいタブで開く）">
                           <div class="link-text">ReDesigner</div>
-                          <img alt="image" class="kink-icon" src="images/home-icons/redesigner_logo.svg">
+                          <img alt="ReDesigner ロゴ" class="kink-icon" src="images/home-icons/redesigner_logo.svg" loading="lazy">
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <main class="skill-contents">
+        <section class="skill-contents" aria-labelledby="skills-heading">
             <div class="container fdb-icons">
               <div class="row text-center">
               <div class="row text-center justify-content-center mt-5">
                 <div class="col-12 col-sm-6 col-lg-3">
-                  <img alt="image" class="fdb-icon" src="images/home-icons/uiux.svg">
+                  <img alt="UI/UXデザインアイコン" class="fdb-icon" src="images/home-icons/uiux.svg" loading="lazy">
                   <h3>様々な媒体でのUI/UX</h3>
                   <p>Web(Web App)、モバイルApp(iOS/Android)からフライヤー、ポスターや名刺まで様々な媒体においてUI/UXデザインを担当しました。</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
-                  <img alt="image" class="fdb-icon" src="images/home-icons/world.svg">
+                  <img alt="海外展開アイコン" class="fdb-icon" src="images/home-icons/world.svg" loading="lazy">
                   <h3>海外でのデザイン経験</h3>
                   <p>英語を用い、海外のエンジニアと共に海外で展開するサービスの開発や、実際に海外に赴きユーザビリティテストを実施しました。</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-                  <img alt="image" class="fdb-icon" src="images/home-icons/article.svg">
+                  <img alt="記事執筆アイコン" class="fdb-icon" src="images/home-icons/article.svg" loading="lazy">
                   <h3>デザイン記事執筆</h3>
                   <p>デザイン会社の長期インターン生として、初心者デザイナー向けのデザインナレッジ記事の執筆を行っています。</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-                  <img alt="image" class="fdb-icon" src="images/home-icons/mechanic.svg">
+                  <img alt="機械加工アイコン" class="fdb-icon" src="images/home-icons/mechanic.svg" loading="lazy">
                   <h3>機械加工技術</h3>
                   <p>高等専門学校の機械学科出身のため、溶接や旋盤、フライス盤加工といった機械工作技術を持っています。</p>
                 </div>
               </div>
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
 
-        <main class="container more-container">
-          <section class="fdb-block">
+        <section class="container more-container">
+          <div class="fdb-block">
             <div class="home-btn">
-              <a class="" href="about.html">More</a>
+              <a href="about.html" aria-label="詳細プロフィールを見る">More</a>
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
 
 
-        <main class="container cd-main-content" id="Work">
-          <h1>Works</h1>
+        <section class="container cd-main-content" id="Work" aria-labelledby="works-heading">
+          <h1 id="works-heading">Works</h1>
           <div class="cd-tab-filter-wrapper">
-            <div class="cd-tab-filter filter-mobile">
-              <ul class="cd-filters">
-                <li class="placeholder">
-                  <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+            <div class="cd-tab-filter filter-mobile" role="group" aria-label="作品フィルター">
+              <ul class="cd-filters" role="tablist">
+                <li class="placeholder" role="none">
+                  <a data-type="all" href="#0" role="tab" aria-selected="true" aria-controls="work-gallery">All</a> <!-- selected option on mobile -->
                 </li>
-                <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                <li class="filter" data-filter=".Web-design"><a href="#0" data-type="Web-design">Web</a></li>
-                <li class="filter" data-filter=".UI-design"><a href="#0" data-type="UI-design">UI</a></li>
-                <li class="filter" data-filter=".UX-design"><a href="#0" data-type="UX-design">UX</a></li>
-                <li class="filter" data-filter=".Flyer-design"><a href="#0" data-type="Flyer-design">Flyer</a></li>
-                <li class="filter" data-filter=".Logo-design"><a href="#0" data-type="Logo-design">Logo</a></li>
-                <li class="filter" data-filter=".Illustration"><a href="#0" data-type="Illustration">Illustration</a></li>
-                <li class="filter" data-filter=".Web-coding"><a href="#0" data-type="Web-coding">Coding</a></li>
-                <li class="filter" data-filter=".Web-app-design"><a href="#0" data-type="Web-app-design">Web app</a></li>
-                <li class="filter" data-filter=".Article-writing"><a href="#0" data-type="Article-writing">Writing</a></li>
+                <li class="filter" role="none"><a class="selected" href="#0" data-type="all" role="tab" aria-selected="true" aria-controls="work-gallery">All</a></li>
+                <li class="filter" data-filter=".Web-design" role="none"><a href="#0" data-type="Web-design" role="tab" aria-selected="false" aria-controls="work-gallery">Web</a></li>
+                <li class="filter" data-filter=".UI-design" role="none"><a href="#0" data-type="UI-design" role="tab" aria-selected="false" aria-controls="work-gallery">UI</a></li>
+                <li class="filter" data-filter=".UX-design" role="none"><a href="#0" data-type="UX-design" role="tab" aria-selected="false" aria-controls="work-gallery">UX</a></li>
+                <li class="filter" data-filter=".Flyer-design" role="none"><a href="#0" data-type="Flyer-design" role="tab" aria-selected="false" aria-controls="work-gallery">Flyer</a></li>
+                <li class="filter" data-filter=".Logo-design" role="none"><a href="#0" data-type="Logo-design" role="tab" aria-selected="false" aria-controls="work-gallery">Logo</a></li>
+                <li class="filter" data-filter=".Illustration" role="none"><a href="#0" data-type="Illustration" role="tab" aria-selected="false" aria-controls="work-gallery">Illustration</a></li>
+                <li class="filter" data-filter=".Web-coding" role="none"><a href="#0" data-type="Web-coding" role="tab" aria-selected="false" aria-controls="work-gallery">Coding</a></li>
+                <li class="filter" data-filter=".Web-app-design" role="none"><a href="#0" data-type="Web-app-design" role="tab" aria-selected="false" aria-controls="work-gallery">Web app</a></li>
+                <li class="filter" data-filter=".Article-writing" role="none"><a href="#0" data-type="Article-writing" role="tab" aria-selected="false" aria-controls="work-gallery">Writing</a></li>
               </ul> <!-- cd-filters -->
             </div> <!-- cd-tab-filter -->
           </div> <!-- cd-tab-filter-wrapper -->
 
-          <section class="cd-gallery">
-            <ul>
+          <div class="cd-gallery" id="work-gallery" role="region" aria-label="作品ギャラリー">
+            <ul role="list">
 
             <!--Hematite-->
-              <li class="work-article mix Web-design Flyer-design">
-                <a class="work-link" href="Hematite-details.html">
+              <li class="work-article mix Web-design Flyer-design" role="listitem">
+                <a class="work-link" href="Hematite-details.html" aria-label="Hematiteプロジェクト詳細を見る">
                   <div class="hover01">
                     <div>
                     <figure>
-                      <img src="images/home-images/Hematite_thumbnail.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/Hematite_thumbnail.png" alt="Hematiteプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-b">
                     <h2>Hematite</h2>
@@ -236,12 +288,12 @@
               </li>
 
               <!--となりキッチン-->
-                <li class="work-article mix UI-design UX-design Illustration Logo-design">
-                  <a class="work-link" href="tk-details.html">
+                <li class="work-article mix UI-design UX-design Illustration Logo-design" role="listitem">
+                  <a class="work-link" href="tk-details.html" aria-label="となりキッチンプロジェクト詳細を見る">
                     <div class="hover01">
-                      <span class="ribbon14">★</span>
+                      <span class="ribbon14" aria-label="注目プロジェクト">★</span>
                       <figure>
-                        <img src="images/home-images/tk_thumbnail.png" alt="" class="img-responsive"/>
+                        <img src="images/home-images/tk_thumbnail.png" alt="となりキッチンプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                     </figure>
                     <div class="Work-text-w">
                       <h2>となりキッチン</h2>
@@ -251,12 +303,12 @@
                 </li>
 
             <!--CTFKit-->
-              <li class="work-article mix Web-design Flyer-design Web-app-design">
-                <a class="work-link" href="CTFKit-details.html">
+              <li class="work-article mix Web-design Flyer-design Web-app-design" role="listitem">
+                <a class="work-link" href="CTFKit-details.html" aria-label="CTFKitプロジェクト詳細を見る">
                   <div class="hover01">
-                    <span class="ribbon14">★</span>
+                    <span class="ribbon14" aria-label="注目プロジェクト">★</span>
                     <figure>
-                      <img src="images/home-images/CTFKit_thumbnail.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/CTFKit_thumbnail.png" alt="CTFKitプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>CTFKit</h2>
@@ -266,11 +318,11 @@
               </li>
 
             <!--SHINONOME-->
-              <li class="work-article mix Web-design Illustration Web-coding">
-                <a class="work-link" href="SHINONOME-details.html">
+              <li class="work-article mix Web-design Illustration Web-coding" role="listitem">
+                <a class="work-link" href="SHINONOME-details.html" aria-label="SHINONOMEプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/SHINONOME_thumbnail.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/SHINONOME_thumbnail.png" alt="SHINONOMEプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-b">
                     <h2>SHINONOME</h2>
@@ -280,11 +332,11 @@
               </li>
 
               <!--UIDA-->
-                <li class="work-article mix UI-design Logo-design Illustration">
-                  <a class="work-link" href="UIDA-details.html">
+                <li class="work-article mix UI-design Logo-design Illustration" role="listitem">
+                  <a class="work-link" href="UIDA-details.html" aria-label="スリーエヌプロジェクト詳細を見る">
                     <div class="hover01">
                       <figure>
-                        <img src="images/home-images/UIDA_thumbnail.png" alt="" class="img-responsive"/>
+                        <img src="images/home-images/UIDA_thumbnail.png" alt="スリーエヌプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                     </figure>
                     <div class="Work-text-w">
                       <h2>スリーエヌ</h2>
@@ -294,11 +346,11 @@
                 </li>
 
             <!--IoT罠-->
-              <li class="work-article mix Logo-design Illustration Flyer-design">
-                <a class="work-link" href="IoTwana-details.html">
+              <li class="work-article mix Logo-design Illustration Flyer-design" role="listitem">
+                <a class="work-link" href="IoTwana-details.html" aria-label="IoT罠プロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/IoTwana.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/IoTwana.png" alt="IoT罠プロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>IoT罠</h2>
@@ -308,11 +360,11 @@
               </li>
 
             <!--Goodpatch Blog-->
-              <li class="work-article mix color-1 Illustration Article-writing">
-                <a class="work-link" href="GpBlog-details.html">
+              <li class="work-article mix color-1 Illustration Article-writing" role="listitem">
+                <a class="work-link" href="GpBlog-details.html" aria-label="Goodpatch Blogプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/GpBlog_thumbnail.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/GpBlog_thumbnail.png" alt="Goodpatch Blogプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>Goodpatch Blog</h2>
@@ -322,11 +374,11 @@
               </li>
 
               <!--icons-->
-              <li class="work-article mix Illustration">
-                <a class="work-link" href="icons-details.html">
+              <li class="work-article mix Illustration" role="listitem">
+                <a class="work-link" href="icons-details.html" aria-label="Iconsプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/essential_icons.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/essential_icons.png" alt="アイコン集プロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                     </figure>
                     <div class="Work-text-b">
                       <h2>Icons</h2>
@@ -336,11 +388,11 @@
               </li>
 
             <!--VAMS-->
-              <li class="work-article mix Logo-design">
-                <a class="work-link" href="VAMS-details.html">
+              <li class="work-article mix Logo-design" role="listitem">
+                <a class="work-link" href="VAMS-details.html" aria-label="VAMSプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/VAMS.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/VAMS.png" alt="VAMSプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>VAMS</h2>
@@ -350,11 +402,11 @@
               </li>
 
             <!--街灯これくしょん-->
-              <li class="work-article mix Web-design UI-design Illustration">
-                <a class="work-link" href="GAIKORE-details.html">
+              <li class="work-article mix Web-design UI-design Illustration" role="listitem">
+                <a class="work-link" href="GAIKORE-details.html" aria-label="街灯これくしょんプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/gaikore.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/gaikore.png" alt="街灯これくしょんプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>街灯これくしょん</h2>
@@ -364,11 +416,11 @@
               </li>
 
             <!--actif-->
-              <li class="work-article mix UI-design Flyer-design Web-app-design">
-                <a class="work-link" href="actif-details.html">
+              <li class="work-article mix UI-design Flyer-design Web-app-design" role="listitem">
+                <a class="work-link" href="actif-details.html" aria-label="actifプロジェクト詳細を見る">
                   <div class="hover01">
                     <figure>
-                      <img src="images/home-images/actif.png" alt="" class="img-responsive"/>
+                      <img src="images/home-images/actif.png" alt="actifプロジェクト サムネイル画像" class="img-responsive" loading="lazy" width="600" height="400"/>
                   </figure>
                   <div class="Work-text-w">
                     <h2>actif</h2>
@@ -381,9 +433,9 @@
               <li class="gap"></li>
               <li class="gap"></li>
             </ul>
-            <div class="cd-fail-message">No results found</div>
-          </section> <!-- cd-gallery -->
-        </main> <!-- cd-main-content -->
+            <div class="cd-fail-message" role="status" aria-live="polite">No results found</div>
+          </div> <!-- cd-gallery -->
+        </section> <!-- cd-main-content -->
 
 
         <!--<main class="thx">
@@ -398,24 +450,24 @@
     	<!-- main -->
 
         <!-- footer -->
-        <footer role="footer">
+        <footer role="contentinfo">
             <!-- nav -->
-            <nav role="footer-nav">
+            <nav role="navigation" aria-label="フッターナビゲーション">
               <ul>
-                  <li><a href="index.html" title="Work">Works</a></li>
-                  <li><a href="about.html" title="About">About</a></li>
-                  <!--<li><a href="contact.html" title="Contact">Contact</a></li>-->
+                  <li><a href="index.html" title="作品一覧">Works</a></li>
+                  <li><a href="about.html" title="プロフィール">About</a></li>
+                  <!--<li><a href="contact.html" title="お問い合わせ">Contact</a></li>-->
                 </ul>
             </nav>
             <!-- nav -->
-            <ul role="social-icons">
-              <li><a class="twitter-link" href="https://twitter.com/Tamaaai2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a class="github-link" href="https://github.com/tamachan-1064"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <!--<li><a href="https://www.instagram.com/tamai.tmi25/"><img class="fa fa-instagram" src="images/icons/wantedly_logo.svg"></img></a></li>-->
+            <ul role="list" aria-label="ソーシャルメディアリンク">
+              <li><a class="twitter-link" href="https://twitter.com/Tamaaai2" target="_blank" rel="noopener noreferrer" aria-label="Twitter（新しいタブで開く）"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="fb-link" href="https://www.facebook.com/yuichiro0525" target="_blank" rel="noopener noreferrer" aria-label="Facebook（新しいタブで開く）"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a class="github-link" href="https://github.com/tamachan-1064" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新しいタブで開く）"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="insta-link" href="https://www.instagram.com/tamai.tmi25/" target="_blank" rel="noopener noreferrer" aria-label="Instagram（新しいタブで開く）"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <!--<li><a href="https://www.instagram.com/tamai.tmi25/" target="_blank" rel="noopener noreferrer"><img class="fa fa-instagram" src="images/icons/wantedly_logo.svg" alt=""></a></li>-->
             </ul>
-            <p>© 2020 YUICHIRO TAMAI</p>
+            <p><small>© 2020 YUICHIRO TAMAI</small></p>
         </footer>
         <!-- footer -->
 
