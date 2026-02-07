@@ -132,6 +132,7 @@ header[role="header"] nav[role="header-nav"] ul > li > a {
 /* フッターのソーシャルアイコンは元のスタイルを維持 */
 footer[role="footer"] ul[role="social-icons"] li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 /* ===== Grid Responsive ===== */
