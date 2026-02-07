@@ -6,7 +6,6 @@
 /* ===== Base Responsive Improvements ===== */
 
 /* タッチデバイス向けの最小タップ領域（44x44px） */
-a:not(.work-link):not(.writing-link):not(.link-img), 
 button, 
 input[type="submit"], 
 input[type="button"] {
@@ -17,13 +16,22 @@ input[type="button"] {
   justify-content: center;
 }
 
-/* 作品リンクや特定のリンクは元のスタイルを維持 */
+/* リンクのスタイルは既存のものを尊重 */
+header h1 > a,
 .work-link,
 .writing-link,
 .link-img {
   display: block;
   min-height: auto;
   min-width: auto;
+}
+
+/* フッターのSNSリンクは元のスタイルを維持 */
+footer[role="footer"] ul[role="social-icons"] li a {
+  display: inline-block;
+  min-height: auto;
+  min-width: auto;
+  text-decoration: none;
 }
 
 /* 画像のレスポンシブ対応 */
@@ -123,12 +131,6 @@ footer[role="footer"] ul[role="social-icons"] li {
   display: inline-block;
 }
 
-footer[role="footer"] ul[role="social-icons"] li a {
-  display: inline-block;
-  min-height: auto;
-  min-width: auto;
-}
-
 /* ===== Grid Responsive ===== */
 
 /* レスポンシブグリッド */
@@ -200,6 +202,17 @@ input, textarea, select {
 
 .responsive-margin {
   margin: clamp(1rem, 3vw, 3rem) 0;
+}
+
+/* 「More」ボタンの中央寄せ */
+.more-container .fdb-block,
+.more-container .home-btn {
+  text-align: center;
+}
+
+.more-container .home-btn a {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* ===== Performance Optimizations ===== */
