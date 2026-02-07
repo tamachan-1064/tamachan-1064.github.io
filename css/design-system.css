@@ -34,7 +34,8 @@
   --color-white: #ffffff;
   
   /* Social Media Colors */
-  --color-twitter: #00aced;
+  --color-twitter: #000000; /* X (formerly Twitter) brand color */
+  --color-x: #000000; /* X brand color */
   --color-facebook: #3C5A99;
   --color-instagram: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   --color-github: #333333;

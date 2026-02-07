@@ -950,7 +950,7 @@ footer p{
 }
 .github-link:hover {background-color: #333;}
 .fb-link:hover {background-color: #3C5A99;}
-.twitter-link:hover {background-color: #00aced;}
+.twitter-link:hover {background-color: #000000;} /* X (formerly Twitter) brand color */
 
 
 
