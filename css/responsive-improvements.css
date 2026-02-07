@@ -6,7 +6,10 @@
 /* ===== Base Responsive Improvements ===== */
 
 /* タッチデバイス向けの最小タップ領域（44x44px） */
-a, button, input[type="submit"], input[type="button"] {
+a:not(.work-link):not(.writing-link):not(.link-img), 
+button, 
+input[type="submit"], 
+input[type="button"] {
   min-height: 44px;
   min-width: 44px;
   display: inline-flex;
@@ -14,10 +17,27 @@ a, button, input[type="submit"], input[type="button"] {
   justify-content: center;
 }
 
+/* 作品リンクや特定のリンクは元のスタイルを維持 */
+.work-link,
+.writing-link,
+.link-img {
+  display: block;
+  min-height: auto;
+  min-width: auto;
+}
+
 /* 画像のレスポンシブ対応 */
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Skillsセクションのアイコンは元のサイズを維持 */
+.skill-cards img,
+.tox-progress-content img {
+  max-width: none;
+  height: 50px;
+  width: auto;
 }
 
 /* ビデオのレスポンシブ対応 */
@@ -92,11 +112,21 @@ header nav #menu-button {
 }
 
 /* ナビゲーションリンクのタッチ領域 */
-header nav ul > li > a {
+header[role="header"] nav[role="header-nav"] ul > li > a {
   padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
   min-height: 44px;
-  display: flex;
-  align-items: center;
+  display: block;
+}
+
+/* フッターのソーシャルアイコンは元のスタイルを維持 */
+footer[role="footer"] ul[role="social-icons"] li {
+  display: inline-block;
+}
+
+footer[role="footer"] ul[role="social-icons"] li a {
+  display: inline-block;
+  min-height: auto;
+  min-width: auto;
 }
 
 /* ===== Grid Responsive ===== */
