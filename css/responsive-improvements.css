@@ -28,7 +28,10 @@ header h1 > a,
 
 /* フッターのSNSリンクは元のスタイルを維持 */
 footer[role="footer"] ul[role="social-icons"] li a {
-  display: inline-block;
+  display: block !important;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
   min-height: auto;
   min-width: auto;
   text-decoration: none;
